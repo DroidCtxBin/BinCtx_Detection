@@ -2,7 +2,7 @@ import os
 import xml.etree.ElementTree as ET
 app_path = '/Users/shaoyang/Desktop/newapk/apktool_output/'
 apps = os.listdir(app_path)
-targets = ['action', 'service', 'meta-data', 'uses-library', 'activity', 'receiver', 'provider']
+targets = ['action', 'service', 'meta-data', 'uses-library', 'activity', 'receiver', 'provider', 'uses-permission']
 def parsexml(root, temp):
 	children = root.getchildren()
 	if len(children) == 0:
