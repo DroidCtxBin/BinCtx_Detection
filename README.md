@@ -10,8 +10,17 @@ During the prediction phase, given an app's bytecode representation, contextual 
 
 To evaluate the effectiveness of BinCtx, we collect several malware families from AMD dataset[1]. As the existing malware dataset can be out-of-date, we also resort to the labeled dataset from CHAMP[2], which contains 2,992 recent, real-world apps from Google Play and top-tier Chinese app markets. We merge two datasets as certain undesired behaviors share common characteristics with malware.
 
+## Contents
 
+
+## Requirements
+* Java version: 1.8.0_181
+* Python version: 3.7.2
+* Tensorflow version: 1.15.0
+* ther dependencies: numpy, scikit-learn, pandas
+* APKTool: Check https://ibotpeaches.github.io/Apktool/ for more details and download.
 
 
 [1] Fengguo Wei, Yuping Li, Sankardas Roy, Xinming Ou, and Wu Zhou. Deep ground truth analysis of current android malware. In Michalis Polychronakis and Michael Meier, editors, Proceedings of the International Conference on Detection of Intrusions and Malware, and Vulnerability Assessment (DIMVA), 2017.
-[2] Yangyu Hu, Haoyu Wang, Tiantong Ji, Xusheng Xiao, Xiapu Luo, Peng Gao, and Yao Guo. CHAMP: Characterizing undesired app behaviors from user comments based on market policies. In Proceedings of the International Conference on Software Engineering (ICSE), 2021
+
+[2] Yangyu Hu, Haoyu Wang, Tiantong Ji, Xusheng Xiao, Xiapu Luo, Peng Gao, and Yao Guo. CHAMP: Characterizing undesired app behaviors from user comments based on market policies. In Proceedings of the International Conference on Software Engineering (ICSE), 2021.
