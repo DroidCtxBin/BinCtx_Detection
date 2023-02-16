@@ -11,7 +11,9 @@ During the prediction phase, given an app's bytecode representation, contextual 
 To evaluate the effectiveness of BinCtx, we collect several malware families from AMD dataset[1]. As the existing malware dataset can be out-of-date, we also resort to the labeled dataset from CHAMP[2], which contains 2,992 recent, real-world apps from Google Play and top-tier Chinese app markets. We merge two datasets as certain undesired behaviors share common characteristics with malware.
 
 ## Contents
-
+* APKCallGraph folder contains code to construct call graph for an app, which can be further used to extract hard-code URL constants, the usage patterns of third-party libraries. It takes Android .apk file as input, and output the call graph as .dot file. 
+* Binary conversion folder holds the scripts to convert the app's bytecode into RGB image.
+* Data folder holds some samples we used in our evaluation from both datasets (malware and undesired behavior apps)
 
 ## Requirements
 * Java version: 1.8.0_181
