@@ -25,20 +25,19 @@ public class APKCFG {
 	public static void main(String[] args) throws Exception{
 		APKCFG apkg = new APKCFG();
 
-		//String androidPlatformPath = "/Users/xushengxiao/Android/platforms/android-18/android.jar"; // do
 																									// not
 																									// use
 																									// ~
-		String appPath = "/Users/shaoyang/Desktop/newproject/downloadapps/";
+		String appPath = "/Users/xxx/Desktop/newproject/downloadapps/";
 //		String apk = "1311184772_com.cornerstonechurch.app";
 //		String apkPath = appPath + "/" + apk + ".apk";
 
 		ArrayList<String> apps = new ArrayList<>();
 
-        BufferedReader bf = new BufferedReader((new FileReader("/Users/shaoyang/Desktop/newproject/apps_b.txt")));
+        BufferedReader bf = new BufferedReader((new FileReader("/Users/xxx/Desktop/newproject/apps_b.txt")));
         String temp;
         while ((temp = bf.readLine())!= null){
-            File folder = new File("/Users/shaoyang/Desktop/newproject/cfgs/" + temp);
+            File folder = new File("/Users/xxx/Desktop/newproject/cfgs/" + temp);
             if (folder.exists()){
                 System.out.println(temp + " is already updated............");
                 continue;
