@@ -56,9 +56,8 @@ public class APKCFG {
 	}
 
     public void generateCFG(String apk, String appPath) throws Exception {
-//        String androidPlatformPath = "D:/Android/sdk/platforms/android-23/android.jar";
-//        String androidPlatformPath = "/Users/majunqi0102/Library/Android/sdk/platforms/android-23/android.jar";
-    	String androidPlatformPath = "/Users/shaoyang/Library/Android/sdk/platforms/android-18/android.jar";
+
+    	String androidPlatformPath = "/Users/xxx/Library/Android/sdk/platforms/android-18/android.jar";
         SetupApplication app = new SetupApplication(androidPlatformPath, appPath);
         // app.
         Options.v().set_android_api_version(22);
@@ -249,7 +248,7 @@ public class APKCFG {
 
 
                 DOTExporter<CDNode, CDEdge> exporter = new DOTExporter<>(new CDNodeIdProvider(), new CDNodeNameProvider(), null);
-                Path path = new File("/Users/shaoyang/Desktop/newproject/cfgs/" + app + "/" + sootClass.getName() + "/").toPath();
+                Path path = new File("/Users/xxx/Desktop/newproject/cfgs/" + app + "/" + sootClass.getName() + "/").toPath();
                 if (!Files.exists(path)) {
                     Files.createDirectories(path);
                 }
