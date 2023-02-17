@@ -213,7 +213,6 @@ public class APKCallGraph {
 		 */
 //		String apk = "com.coreapps.android.followme.imagingusa18";
 		String apk = args[0].substring(args[0].lastIndexOf("/") + 1, args[0].indexOf(".apk"));
-//		String appPath = "/Users/shaoyang/Desktop/API_exp/sampletest/apks/";
 		//String apk = "nextcloud";
 		//String ic3 = args[4];
 		String ic3 = "./ic3_output_m/";
